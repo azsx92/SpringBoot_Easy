@@ -1,6 +1,8 @@
 package jumpTwo.hellospring.repository;
 
 import jumpTwo.hellospring.domain.Member;
+import org.springframework.stereotype.Repository;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.*;
 

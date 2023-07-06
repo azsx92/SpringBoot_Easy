@@ -3,6 +3,7 @@ package jumpTwo.hellospring.service;
 import jumpTwo.hellospring.domain.Member;
 import jumpTwo.hellospring.repository.MemberRepository;
 import jumpTwo.hellospring.repository.MemoryMemberRepository;
+import org.springframework.stereotype.Service;
 
 
 import java.util.List;
