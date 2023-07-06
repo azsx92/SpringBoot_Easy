@@ -5,6 +5,7 @@ import jumpTwo.hellospring.repository.MemberRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.annotation.Commit;
 import org.springframework.transaction.annotation.Transactional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -23,11 +24,12 @@ public class MemberServiceIntegrationTest {
     MemberRepository memberRepository;
 
     @Test
+    @Commit
     public void 회원가입() throws Exception {
 
         //Given
         Member member = new Member();
-        member.setName("spring2");
+        member.setName("spring100");
 //When
         Long saveId = memberService.join(member);
 //Then
