@@ -17,7 +17,6 @@ public class HelloController {
         this.memberService = memberService;
     }
 
-/*
     @GetMapping("hello")
     public String hello(Model model) {
         model.addAttribute("data", "spring!!");
@@ -53,5 +52,5 @@ public class HelloController {
         public void setName(String name) {
             this.name = name;
         }
-    }*/
+    }
 }

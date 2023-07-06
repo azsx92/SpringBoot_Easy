@@ -27,6 +27,8 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	runtimeOnly 'com.h2database:h2'
 	/*
 		developmentOnly
 		Gradle의 developmentOnly는 개발환경에만 적용되는 설정이다. 즉, 운영환경에 배포되는 jar, war 파일에는 developmentOnly로 설치된 라이브러리는 제외된다.
