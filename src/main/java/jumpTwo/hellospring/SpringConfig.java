@@ -1,6 +1,7 @@
 package jumpTwo.hellospring;
 
 import jakarta.persistence.EntityManager;
+import jumpTwo.hellospring.aop.TimeTraceAop;
 import jumpTwo.hellospring.repository.*;
 import jumpTwo.hellospring.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,4 +25,8 @@ public class SpringConfig {
         return new MemberService(memberRepository);
     }
 
+//    @Bean
+//    public TimeTraceAop timeTraceAop() {
+//        return new TimeTraceAop();
+//    }
 }
